@@ -1,0 +1,56 @@
+/* Dashboard Styles */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Warna kartu */
+.card.blue { background: #007bff; }   /* Biru sesuai permintaan */
+.card.navy { background: #2c3e50; }   /* Navy */
+.card.white { 
+  background: #fff; 
+  color: #000; 
+  border: 1px solid #ddd; 
+}
+.card.red { background: #e74c3c; }    /* Merah untuk warning */
+.card.yellow { background: #f1c40f; color: #000; } /* Kuning opsional */
+
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+th {
+  background: #007bff; /* biru sesuai */
+  color: #fff;
+}
+
+/* Highlight stok hampir habis */
+tr.low-stock td {
+  background: #ffe5e5;   /* merah muda */
+  color: #e74c3c;        /* merah */
+  font-weight: 600;
+}
