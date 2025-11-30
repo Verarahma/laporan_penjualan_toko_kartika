@@ -140,5 +140,13 @@ $res = mysqli_query($koneksi, "SELECT id,kode,nama,harga,stok FROM products WHER
     </form>
   </div>
   <script src="assets/js/app.js"></script>
+  <script>
+$(document).ready(function() {
+    $('#product_select').select2({
+        placeholder: "-- pilih produk --",
+        allowClear: true
+    });
+});
+</script>
 </body>
 </html>
