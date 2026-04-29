@@ -12,9 +12,7 @@ $res = mysqli_query($koneksi, "
     SELECT p.*, s.nama AS supplier
     FROM products p
     LEFT JOIN suppliers s ON p.id_supplier = s.id
-    WHERE p.deleted = 0
     ORDER BY p.id DESC
-
 ");
 ?>
 <!DOCTYPE html>
